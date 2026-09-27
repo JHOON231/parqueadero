@@ -7,6 +7,7 @@ public abstract class Vehiculo {
     private String propietario;
     private LocalDateTime horaIngreso;
 
+    // Asegúrate de que este constructor exista:
     public Vehiculo(String placa, String propietario) {
         this.placa = placa;
         this.propietario = propietario;
@@ -37,9 +38,5 @@ public abstract class Vehiculo {
 
     public void setHoraIngreso(LocalDateTime horaIngreso) {
         this.horaIngreso = horaIngreso;
-    }
-
-    public String toString() {
-        return "Vehiculo [placa=" + placa + ", propietario=" + propietario + ", horaIngreso=" + horaIngreso + "]";
     }
 }
